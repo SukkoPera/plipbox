@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PlipBox"
-Date "2021-08-31"
+Date "2023-02-28"
 Rev "2S"
-Comp ""
-Comment1 ""
+Comp "lallafa, kuro68k and SukkoPera"
+Comment1 "Released under the GNU GPL v3"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -22,25 +22,6 @@ F 1 "PWR" V 5760 1770 50  0000 C CNN
 F 2 "plipbox:Pin_Header_Straight_1x03-ModSilkS" H 5660 1770 50  0001 C CNN
 F 3 "" H 5660 1770 50  0000 C CNN
 	1    5660 1770
-	1    0    0    -1  
-$EndComp
-Text Label 1240 5260 0    60   ~ 0
-VIN
-Text Label 1240 5160 0    60   ~ 0
-+5V
-Wire Wire Line
-	1540 5260 1240 5260
-Wire Wire Line
-	1540 5160 1240 5160
-$Comp
-L power:GND #PWR02
-U 1 1 595806D3
-P 1050 5405
-F 0 "#PWR02" H 1050 5155 50  0001 C CNN
-F 1 "GND" H 1050 5255 50  0000 C CNN
-F 2 "" H 1050 5405 50  0000 C CNN
-F 3 "" H 1050 5405 50  0000 C CNN
-	1    1050 5405
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -141,8 +122,6 @@ Wire Wire Line
 Wire Wire Line
 	9705 3470 9705 3520
 Wire Wire Line
-	9705 4270 9705 4320
-Wire Wire Line
 	9405 4220 9405 4270
 $Comp
 L power:GND #PWR07
@@ -157,96 +136,6 @@ F 3 "" H 9405 4620 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	9405 4570 9405 4620
-Text Label 1090 3460 0    60   ~ 0
-ROUT
-Text Label 1090 3560 0    60   ~ 0
-DIN
-Wire Wire Line
-	1090 3560 1540 3560
-Wire Wire Line
-	1540 3460 1090 3460
-Text Label 5210 5515 0    60   ~ 0
-~STROBE
-Text Label 5210 3115 0    60   ~ 0
-SELECT
-Text Label 5210 3515 0    60   ~ 0
-BUSY
-Text Label 5210 4115 0    60   ~ 0
-DATA6
-Text Label 5210 3915 0    60   ~ 0
-DATA7
-Text Label 5210 3715 0    60   ~ 0
-~ACK
-Text Label 5210 5315 0    60   ~ 0
-DATA0
-Text Label 5210 5115 0    60   ~ 0
-DATA1
-Text Label 5210 4915 0    60   ~ 0
-DATA2
-Text Label 5210 4715 0    60   ~ 0
-DATA3
-Text Label 5210 4515 0    60   ~ 0
-DATA4
-Text Label 5210 4315 0    60   ~ 0
-DATA5
-Wire Wire Line
-	5210 5515 5660 5515
-Wire Wire Line
-	5210 5315 5660 5315
-Wire Wire Line
-	5210 5115 5660 5115
-Wire Wire Line
-	5210 4915 5660 4915
-Wire Wire Line
-	5210 4715 5660 4715
-Wire Wire Line
-	5210 4515 5660 4515
-Wire Wire Line
-	5210 4315 5660 4315
-Wire Wire Line
-	5210 4115 5660 4115
-Wire Wire Line
-	5210 3915 5660 3915
-Wire Wire Line
-	5210 3715 5660 3715
-Wire Wire Line
-	5210 3515 5660 3515
-Wire Wire Line
-	5210 3115 5660 3115
-Wire Wire Line
-	5660 4815 5570 4815
-Text Label 4590 3560 2    60   ~ 0
-~STROBE
-Text Label 4590 4160 2    60   ~ 0
-SELECT
-Text Label 4590 3660 2    60   ~ 0
-BUSY
-Text Label 4590 3760 2    60   ~ 0
-POUT
-Text Label 4590 3860 2    60   ~ 0
-DATA6
-Text Label 4590 3960 2    60   ~ 0
-DATA7
-Text Label 4590 4060 2    60   ~ 0
-~ACK
-Wire Wire Line
-	4590 3560 4140 3560
-Wire Wire Line
-	4590 3660 4140 3660
-Wire Wire Line
-	4590 3760 4140 3760
-Wire Wire Line
-	4590 3860 4140 3860
-Wire Wire Line
-	4590 3960 4140 3960
-Wire Wire Line
-	4590 4060 4140 4060
-Wire Wire Line
-	4590 4160 4140 4160
-Wire Wire Line
-	1050 5405 1050 4960
-Wire Wire Line
-	1050 4960 1540 4960
 $Comp
 L power:GND #PWR09
 U 1 1 595900E4
@@ -394,110 +283,6 @@ F 3 "~" H 9460 3320 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:DB25_Male P1
-U 1 1 5FF4B578
-P 5960 4315
-F 0 "P1" H 6140 4361 50  0000 L CNN
-F 1 "PARALLEL_PORT" H 6140 4270 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-25_Male_EdgeMount_P2.77mm" H 5960 4315 50  0001 C CNN
-F 3 " ~" H 5960 4315 50  0001 C CNN
-	1    5960 4315
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5660 5015
-NoConn ~ 5660 5215
-NoConn ~ 5660 3615
-NoConn ~ 5660 3415
-NoConn ~ 5660 3215
-Wire Wire Line
-	5570 4615 5570 4815
-$Comp
-L power:GND #PWR0101
-U 1 1 5FF74964
-P 5570 5760
-F 0 "#PWR0101" H 5570 5510 50  0001 C CNN
-F 1 "GND" H 5570 5610 50  0000 C CNN
-F 2 "" H 5570 5760 50  0000 C CNN
-F 3 "" H 5570 5760 50  0000 C CNN
-	1    5570 5760
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5570 4415 5570 4615
-Connection ~ 5570 4615
-Wire Wire Line
-	5570 4215 5570 4415
-Wire Wire Line
-	5570 4015 5570 4215
-Connection ~ 5570 4215
-Wire Wire Line
-	5210 3315 5660 3315
-Text Label 5210 3315 0    60   ~ 0
-POUT
-Wire Wire Line
-	5570 4015 5660 4015
-Connection ~ 5570 4415
-Wire Wire Line
-	5570 4415 5660 4415
-Connection ~ 5570 4815
-Wire Wire Line
-	5570 4815 5570 5760
-Wire Wire Line
-	5570 4615 5660 4615
-Wire Wire Line
-	5570 4215 5660 4215
-$Comp
-L arduino:Arduino_Nano_Socket U1
-U 1 1 60031ADD
-P 2840 4360
-F 0 "U1" H 2840 5597 60  0000 C CNN
-F 1 "ARDUINO_NANO_V3" H 2840 5491 60  0000 C CNN
-F 2 "plipbox:Arduino_Nano_Socket" H 4640 8110 60  0001 C CNN
-F 3 "https://store.arduino.cc/arduino-nano" H 4640 8110 60  0001 C CNN
-	1    2840 4360
-	1    0    0    -1  
-$EndComp
-NoConn ~ 4140 4260
-NoConn ~ 4140 4360
-NoConn ~ 4140 4460
-NoConn ~ 4140 4560
-NoConn ~ 1540 5060
-NoConn ~ 1540 4660
-NoConn ~ 4140 5060
-NoConn ~ 4140 5160
-Wire Wire Line
-	1540 4560 1140 4560
-Wire Wire Line
-	1540 4460 1140 4460
-Wire Wire Line
-	1540 4360 1140 4360
-Wire Wire Line
-	1540 4260 1140 4260
-Wire Wire Line
-	1540 4160 1140 4160
-Wire Wire Line
-	1540 4060 1140 4060
-Text Label 1140 4060 0    60   ~ 0
-DATA5
-Text Label 1140 4160 0    60   ~ 0
-DATA4
-Text Label 1140 4260 0    60   ~ 0
-DATA3
-Text Label 1140 4360 0    60   ~ 0
-DATA2
-Text Label 1140 4460 0    60   ~ 0
-DATA1
-Text Label 1140 4560 0    60   ~ 0
-DATA0
-NoConn ~ 1540 3960
-NoConn ~ 1540 3860
-NoConn ~ 4140 3460
-Wire Wire Line
-	1050 4960 1050 4860
-Wire Wire Line
-	1050 4860 1540 4860
-Connection ~ 1050 4960
-$Comp
 L void:Void V0
 U 1 1 6008F606
 P 6330 7560
@@ -524,39 +309,6 @@ Wire Wire Line
 Connection ~ 5395 1670
 Wire Wire Line
 	5395 1670 5460 1670
-Wire Wire Line
-	5660 3815 5570 3815
-Wire Wire Line
-	5570 3815 5570 4015
-Connection ~ 5570 4015
-Wire Wire Line
-	5660 5415 4810 5415
-Wire Wire Line
-	4810 5415 4810 3290
-$Comp
-L Device:D D1
-U 1 1 601420AD
-P 4810 3140
-F 0 "D1" V 4764 3220 50  0000 L CNN
-F 1 "D" V 4855 3220 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA" H 4810 3140 50  0001 C CNN
-F 3 "~" H 4810 3140 50  0001 C CNN
-	1    4810 3140
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4810 2990 4810 2915
-$Comp
-L power:+5V #PWR01
-U 1 1 60145EE3
-P 4810 2915
-F 0 "#PWR01" H 4810 2765 50  0001 C CNN
-F 1 "+5V" H 4825 3088 50  0000 C CNN
-F 2 "" H 4810 2915 50  0001 C CNN
-F 3 "" H 4810 2915 50  0001 C CNN
-	1    4810 2915
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR03
 U 1 1 6015FB0A
@@ -595,4 +347,271 @@ Wire Wire Line
 Connection ~ 9460 3120
 Wire Wire Line
 	9460 3120 9705 3120
+Text Label 5315 5015 0    60   ~ 0
+~RESET
+Wire Wire Line
+	5765 5015 5315 5015
+$Comp
+L power:+5V #PWR01
+U 1 1 60145EE3
+P 4915 2915
+F 0 "#PWR01" H 4915 2765 50  0001 C CNN
+F 1 "+5V" H 4930 3088 50  0000 C CNN
+F 2 "" H 4915 2915 50  0001 C CNN
+F 3 "" H 4915 2915 50  0001 C CNN
+	1    4915 2915
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4915 2990 4915 2915
+$Comp
+L Device:D D1
+U 1 1 601420AD
+P 4915 3140
+F 0 "D1" V 4869 3220 50  0000 L CNN
+F 1 "1n5819" V 4960 3220 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 4915 3140 50  0001 C CNN
+F 3 "~" H 4915 3140 50  0001 C CNN
+	1    4915 3140
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4915 5415 4915 3290
+Wire Wire Line
+	5765 5415 4915 5415
+Connection ~ 5675 4015
+Wire Wire Line
+	5675 3815 5675 4015
+Wire Wire Line
+	5765 3815 5675 3815
+Wire Wire Line
+	5675 4215 5765 4215
+Wire Wire Line
+	5675 4615 5765 4615
+Wire Wire Line
+	5675 4815 5675 5760
+Connection ~ 5675 4815
+Wire Wire Line
+	5675 4415 5765 4415
+Connection ~ 5675 4415
+Wire Wire Line
+	5675 4015 5765 4015
+Text Label 5315 3315 0    60   ~ 0
+POUT
+Wire Wire Line
+	5315 3315 5765 3315
+Connection ~ 5675 4215
+Wire Wire Line
+	5675 4015 5675 4215
+Wire Wire Line
+	5675 4215 5675 4415
+Connection ~ 5675 4615
+Wire Wire Line
+	5675 4415 5675 4615
+$Comp
+L power:GND #PWR0101
+U 1 1 5FF74964
+P 5675 5760
+F 0 "#PWR0101" H 5675 5510 50  0001 C CNN
+F 1 "GND" H 5675 5610 50  0000 C CNN
+F 2 "" H 5675 5760 50  0000 C CNN
+F 3 "" H 5675 5760 50  0000 C CNN
+	1    5675 5760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 4615 5675 4815
+NoConn ~ 5765 3215
+NoConn ~ 5765 3415
+NoConn ~ 5765 3615
+NoConn ~ 5765 5215
+$Comp
+L Connector:DB25_Male P1
+U 1 1 5FF4B578
+P 6065 4315
+F 0 "P1" H 6245 4361 50  0000 L CNN
+F 1 "PARALLEL_PORT" H 6245 4270 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-25_Male_EdgeMount_P2.77mm" H 6065 4315 50  0001 C CNN
+F 3 " ~" H 6065 4315 50  0001 C CNN
+	1    6065 4315
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5765 4815 5675 4815
+Wire Wire Line
+	5315 3115 5765 3115
+Wire Wire Line
+	5315 3515 5765 3515
+Wire Wire Line
+	5315 3715 5765 3715
+Wire Wire Line
+	5315 3915 5765 3915
+Wire Wire Line
+	5315 4115 5765 4115
+Wire Wire Line
+	5315 4315 5765 4315
+Wire Wire Line
+	5315 4515 5765 4515
+Wire Wire Line
+	5315 4715 5765 4715
+Wire Wire Line
+	5315 4915 5765 4915
+Wire Wire Line
+	5315 5115 5765 5115
+Wire Wire Line
+	5315 5315 5765 5315
+Wire Wire Line
+	5315 5515 5765 5515
+Text Label 5315 4315 0    60   ~ 0
+DATA5
+Text Label 5315 4515 0    60   ~ 0
+DATA4
+Text Label 5315 4715 0    60   ~ 0
+DATA3
+Text Label 5315 4915 0    60   ~ 0
+DATA2
+Text Label 5315 5115 0    60   ~ 0
+DATA1
+Text Label 5315 5315 0    60   ~ 0
+DATA0
+Text Label 5315 3715 0    60   ~ 0
+~ACK
+Text Label 5315 3915 0    60   ~ 0
+DATA7
+Text Label 5315 4115 0    60   ~ 0
+DATA6
+Text Label 5315 3515 0    60   ~ 0
+BUSY
+Text Label 5315 3115 0    60   ~ 0
+SELECT
+Text Label 5315 5515 0    60   ~ 0
+~STROBE
+Wire Wire Line
+	9705 4270 9705 4320
+Wire Wire Line
+	4015 5160 4125 5160
+Wire Wire Line
+	4325 5160 4610 5160
+Text Label 4610 5160 2    60   ~ 0
+~RESET
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 64B043EF
+P 4225 5160
+F 0 "JP1" H 4225 5068 50  0000 C CNN
+F 1 "JMP_RST" H 4225 4977 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4225 5160 50  0001 C CNN
+F 3 "~" H 4225 5160 50  0001 C CNN
+	1    4225 5160
+	1    0    0    -1  
+$EndComp
+Connection ~ 925  4960
+Wire Wire Line
+	925  4860 1415 4860
+Wire Wire Line
+	925  4960 925  4860
+NoConn ~ 4015 3460
+NoConn ~ 1415 3860
+NoConn ~ 1415 3960
+Text Label 1015 4560 0    60   ~ 0
+DATA0
+Text Label 1015 4460 0    60   ~ 0
+DATA1
+Text Label 1015 4360 0    60   ~ 0
+DATA2
+Text Label 1015 4260 0    60   ~ 0
+DATA3
+Text Label 1015 4160 0    60   ~ 0
+DATA4
+Text Label 1015 4060 0    60   ~ 0
+DATA5
+Wire Wire Line
+	1415 4060 1015 4060
+Wire Wire Line
+	1415 4160 1015 4160
+Wire Wire Line
+	1415 4260 1015 4260
+Wire Wire Line
+	1415 4360 1015 4360
+Wire Wire Line
+	1415 4460 1015 4460
+Wire Wire Line
+	1415 4560 1015 4560
+NoConn ~ 4015 5060
+NoConn ~ 1415 4660
+NoConn ~ 1415 5060
+NoConn ~ 4015 4560
+NoConn ~ 4015 4460
+NoConn ~ 4015 4360
+NoConn ~ 4015 4260
+$Comp
+L arduino:Arduino_Nano_Socket U1
+U 1 1 60031ADD
+P 2715 4360
+F 0 "U1" H 2715 5597 60  0000 C CNN
+F 1 "ARDUINO_NANO_V3" H 2715 5491 60  0000 C CNN
+F 2 "plipbox:Arduino_Nano_Socket" H 4515 8110 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-nano" H 4515 8110 60  0001 C CNN
+	1    2715 4360
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	925  4960 1415 4960
+Wire Wire Line
+	925  5405 925  4960
+Wire Wire Line
+	4465 4160 4015 4160
+Wire Wire Line
+	4465 4060 4015 4060
+Wire Wire Line
+	4465 3960 4015 3960
+Wire Wire Line
+	4465 3860 4015 3860
+Wire Wire Line
+	4465 3760 4015 3760
+Wire Wire Line
+	4465 3660 4015 3660
+Wire Wire Line
+	4465 3560 4015 3560
+Text Label 4465 4060 2    60   ~ 0
+~ACK
+Text Label 4465 3960 2    60   ~ 0
+DATA7
+Text Label 4465 3860 2    60   ~ 0
+DATA6
+Text Label 4465 3760 2    60   ~ 0
+POUT
+Text Label 4465 3660 2    60   ~ 0
+BUSY
+Text Label 4465 4160 2    60   ~ 0
+SELECT
+Text Label 4465 3560 2    60   ~ 0
+~STROBE
+Wire Wire Line
+	1415 3460 965  3460
+Wire Wire Line
+	965  3560 1415 3560
+Text Label 965  3560 0    60   ~ 0
+DIN
+Text Label 965  3460 0    60   ~ 0
+ROUT
+$Comp
+L power:GND #PWR02
+U 1 1 595806D3
+P 925 5405
+F 0 "#PWR02" H 925 5155 50  0001 C CNN
+F 1 "GND" H 925 5255 50  0000 C CNN
+F 2 "" H 925 5405 50  0000 C CNN
+F 3 "" H 925 5405 50  0000 C CNN
+	1    925  5405
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1415 5160 1115 5160
+Wire Wire Line
+	1415 5260 1115 5260
+Text Label 1115 5160 0    60   ~ 0
++5V
+Text Label 1115 5260 0    60   ~ 0
+VIN
 $EndSCHEMATC
